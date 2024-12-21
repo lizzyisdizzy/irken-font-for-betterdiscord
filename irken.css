@@ -1,4 +1,11 @@
-@import url('https://raw.githubusercontent.com/lizzyisdizzy/irken-font-for-betterdiscord/refs/heads/main/Irken-aoqE.ttf');
-::placeholder, body, button, input, select, textarea {
-    font-family: "Irken";
+@import url(https://raw.githubusercontent.com/lizzyisdizzy/irken-font-for-betterdiscord/refs/heads/main/Irken-aoqE.ttf);
+:root {
+--Chat-Font-Used: 'Irken', normal ;
+--Chat-Font-Size: 15.5px;
+}
+:not([class="hljs"]):not(code){
+font-family: var(--Chat-Font-Used)!important;
+}
+.markup:not(code) {
+font-size: var(--Chat-Font-Size)!important;
 }
